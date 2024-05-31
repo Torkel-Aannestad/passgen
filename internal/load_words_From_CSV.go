@@ -3,7 +3,6 @@ package internal
 import (
 	"embed"
 	"encoding/csv"
-	"fmt"
 	"io"
 )
 
@@ -31,9 +30,6 @@ func LoadWordsFromCSV() ([]string, error) {
 		}
 		words = append(words, record[0])
 	}
-
-	fmt.Printf("word: %v\n", words[19820])
-	//tempt := []string{"I", "am", "slater"}
 
 	return words, nil
 }
